@@ -15,6 +15,7 @@
 
     @media(max-width: 780px){
       height: 100vh;
+      width: 100%;
     }
     
     article {
@@ -32,9 +33,9 @@
       background-size: cover;
       padding: 0 1rem;
 
-      // @media(max-width: 780px){
-      //   height: 100vh;
-      // }
+      @media(max-width: 780px){
+        width: 100%;
+      }
 
       .content{
         z-index: 100;
@@ -132,18 +133,6 @@
   .content_container {
     padding: 0;
 
-    @media(min-width: 780px){
-      overflow-y: auto; 
-      padding: 0;
-
-      &::-webkit-scrollbar{
-        width: .3rem;
-      }
-      &::-webkit-scrollbar-thumb{
-        background: $scroll-thumb-main;
-      }
-    }
-
     & > div {  
       padding: 5rem 1rem;
       max-width: 1200px;
@@ -163,6 +152,10 @@
       position: fixed;
       z-index: 50;
       background-color: $bg;
+
+      @media(max-width: 780px){
+        display: none;
+      }
     }
 
     .container-heading{
@@ -295,6 +288,10 @@
             @media(max-width: 1024px){
               font-size: 18px;
             }
+
+            @media(max-width: 780px){
+              font-size: 22px;
+            }
           }
   
           .slide-icon{
@@ -331,6 +328,13 @@
 
             @media(max-width: 780px){
               text-align: start;
+              width: 60%;
+              font-size: 1.2rem;
+            }
+
+            @media(max-width: 600px){
+              width: 70%;
+              font-size: 1rem;
             }
           }
         }
@@ -374,7 +378,7 @@
           }
         }
 
-        @media(max-width: 1024px){
+        @media(max-width: 1025px){
           gap: 0.8rem;
           padding: 2.4rem 1rem 1rem 1.4rem;
         }
@@ -384,6 +388,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: flex-start;
+          padding: 0 1.25rem;
 
           .slide-card{
             width: 100%;
@@ -398,10 +403,6 @@
 
               .slide-icon{
                 width: 40%;
-              }
-              .slide-desc{
-                width: 60%;
-                font-size: 1.2rem;
               }
             }
 
@@ -419,14 +420,6 @@
 
           .slide-card:nth-child(even) .slide-icon{
             order: 2;
-          }
-        }
-
-        @media(max-width: 600px){
-          padding: 0;
-
-          .slide-desc{
-            font-size: 1rem;
           }
         }
       }
@@ -452,7 +445,7 @@
         @media(max-width: 600px){
           grid-template-columns: 1fr;
           gap: 1.5rem;
-          padding: 1.4rem 0;
+          padding: 1rem 1.25rem;
         }
 
         .ex-box {
@@ -571,6 +564,7 @@
           }
         }
       }
+
 
     }
 
@@ -941,12 +935,18 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      padding-bottom: 2rem;
 
       .contact_info{
         text-align: center;
         font-size: 1.25rem;
+        font-weight: 600;
         color: $text-pink;
         opacity: .8;
+
+        @media(max-width: 600px){
+          font-size: 0.8rem;
+        }
 
         &:hover{
           cursor: pointer;
@@ -957,6 +957,24 @@
       .email_info {
         margin-bottom: 0.5rem;
       }
+    }
+
+    @media(min-width: 780px){
+      overflow-y: auto; 
+      padding: 0;
+
+      &::-webkit-scrollbar{
+        width: .3rem;
+      }
+      &::-webkit-scrollbar-thumb{
+        background: $scroll-thumb-main;
+      }
+    }
+  }
+
+  .content_container{
+    @media(max-width: 600px){
+      width: 100%;
     }
   }
 
