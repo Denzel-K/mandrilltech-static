@@ -1010,6 +1010,11 @@ header.scrolled {
   font-weight: 600;
   opacity: 0.8;
 }
+@media (max-width: 430px) {
+  .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc .p_head span {
+    font-size: 10px;
+  }
+}
 .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc .p_head .p-links {
   display: flex;
   flex-direction: row;
@@ -1107,7 +1112,7 @@ header.scrolled {
 @media (max-width: 780px) {
   .home_main .content_container .projects-container .project-box {
     padding: 0 0 1rem 0;
-    height: 75vh;
+    height: 80vh;
   }
 }
 @media (max-width: 475px) {

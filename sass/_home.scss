@@ -611,8 +611,6 @@
           }
         }
       }
-
-
     }
 
     .projects-container{
@@ -851,6 +849,11 @@
                     font-family: 'Mukta';
                     font-weight: 600;
                     opacity: .8;
+
+                    @media(max-width: 430px){
+                      font-size: 10px;
+                    }
+ 
                   }
 
                   .p-links{
@@ -964,7 +967,7 @@
 
         @media(max-width: 780px){
           padding: 0 0 1rem 0;
-          height: 75vh;
+          height: 80vh;
         }
 
         @media(max-width: 475px){
