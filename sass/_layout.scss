@@ -11,13 +11,12 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
+  transition: 0.3s ease;
 
   @media(max-width: 780px){
-    position: sticky;
-    background-color: $bg;
+    position: fixed;
     z-index: 200
   }
-
 
   @media(max-width: 600px){
     display: flex;
@@ -147,6 +146,10 @@ header {
       }
     }
   }
+}
+
+header.scrolled{
+  background-color: $bg;
 }
 
 .hidden{

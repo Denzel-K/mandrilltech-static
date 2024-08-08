@@ -180,6 +180,19 @@ window.addEventListener('load', () => {
   });
 })
 
+//Header behaviour on scroll
+document.addEventListener('scroll', () => {
+  const header_item = document.querySelector("header");
+  
+  if (window.scrollY > 0){
+    header_item.classList.add('scrolled');
+  }
+  else{
+    header_item.classList.remove('scrolled');
+  }
+})
+
+
 //Open menu
 const open_menu = document.querySelector('.open-menu');
 const close_menu = document.querySelector('.close-menu');

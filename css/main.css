@@ -49,11 +49,11 @@ header {
   width: 100%;
   top: 0;
   z-index: 100;
+  transition: 0.3s ease;
 }
 @media (max-width: 780px) {
   header {
-    position: sticky;
-    background-color: #04020f;
+    position: fixed;
     z-index: 200;
   }
 }
@@ -170,6 +170,10 @@ header nav .pages a .page-text {
   color: #f96988;
   text-align: start;
   margin-top: 2px;
+}
+
+header.scrolled {
+  background-color: #04020f;
 }
 
 .hidden {
