@@ -180,6 +180,26 @@ window.addEventListener('load', () => {
   });
 })
 
+//Open menu
+const open_menu = document.querySelector('.open-menu');
+const close_menu = document.querySelector('.close-menu');
+const nav = document.querySelector('nav');
+
+open_menu.addEventListener('click', () => {
+  close_menu.classList.remove('hidden');
+  open_menu.classList.add('hidden');
+
+  nav.classList.add('nav-active');
+})
+
+close_menu.addEventListener('click', () => { 
+  close_menu.classList.add('hidden');
+  open_menu.classList.remove('hidden');
+
+  nav.classList.remove('nav-active');
+})
+
+
 //Cartegory sidebar
 const openSidebar = document.querySelector('.arrow-open');
 const sidebar = document.querySelector('.cartegory-sidebar');

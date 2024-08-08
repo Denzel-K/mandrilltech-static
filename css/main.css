@@ -256,6 +256,11 @@ header nav .pages a .page-text {
   background-image: linear-gradient(to right bottom, rgba(150, 18, 45, 0.5), rgba(134, 3, 58, 0.5), rgba(114, 5, 67, 0.5), rgba(91, 13, 72, 0.5), rgba(66, 19, 72, 0.5), rgba(51, 20, 67, 0.5), rgba(38, 20, 61, 0.5), rgba(25, 19, 54, 0.5), rgba(21, 16, 46, 0.5), rgba(18, 12, 37, 0.5), rgba(14, 7, 29, 0.5), rgba(6, 2, 21, 0.5));
   border-radius: 12px;
 }
+@media (max-width: 430px) {
+  .home_main .static_card article .content {
+    padding: 1rem 0.4rem;
+  }
+}
 .home_main .static_card article .content p:nth-child(1) {
   color: #fe97ad;
   font-size: 14px;
@@ -263,11 +268,21 @@ header nav .pages a .page-text {
   font-family: "Ubuntu Mono";
   margin-left: 2px;
 }
+@media (max-width: 430px) {
+  .home_main .static_card article .content p:nth-child(1) {
+    font-size: 12px;
+  }
+}
 .home_main .static_card article .content p:nth-child(2) {
   color: #fe97ad;
   font-size: 36px;
   font-weight: 700;
   font-family: "Raleway";
+}
+@media (max-width: 430px) {
+  .home_main .static_card article .content p:nth-child(2) {
+    font-size: 28px;
+  }
 }
 .home_main .static_card article .content p:nth-child(3) {
   color: #fe97ad;
@@ -276,6 +291,11 @@ header nav .pages a .page-text {
   font-family: "Raleway";
   margin-top: 8px;
 }
+@media (max-width: 430px) {
+  .home_main .static_card article .content p:nth-child(3) {
+    font-size: 22px;
+  }
+}
 .home_main .static_card article .content p:nth-child(4) {
   color: #fe97ad;
   font-size: 16px;
@@ -283,6 +303,11 @@ header nav .pages a .page-text {
   font-family: "Raleway";
   opacity: 0.8;
   margin-top: 18px;
+}
+@media (max-width: 430px) {
+  .home_main .static_card article .content p:nth-child(4) {
+    font-size: 14px;
+  }
 }
 .home_main .static_card article .content .contact-bookmark {
   border-radius: 12px;
@@ -378,8 +403,18 @@ header nav .pages a .page-text {
 .home_main .content_container .intro-container .heading .open-tag {
   margin-right: -3rem;
 }
+@media (max-width: 430px) {
+  .home_main .content_container .intro-container .heading .open-tag {
+    margin-right: -2.8;
+  }
+}
 .home_main .content_container .intro-container .heading .close-tag {
   margin-left: -2.6rem;
+}
+@media (max-width: 430px) {
+  .home_main .content_container .intro-container .heading .close-tag {
+    margin-left: -2rem;
+  }
 }
 .home_main .content_container .intro-container .heading div:nth-child(1), .home_main .content_container .intro-container .heading div:nth-child(3) {
   width: 130px;
@@ -390,6 +425,11 @@ header nav .pages a .page-text {
 @media (max-width: 1024px) {
   .home_main .content_container .intro-container .heading div:nth-child(1), .home_main .content_container .intro-container .heading div:nth-child(3) {
     width: 120px;
+  }
+}
+@media (max-width: 430px) {
+  .home_main .content_container .intro-container .heading div:nth-child(1), .home_main .content_container .intro-container .heading div:nth-child(3) {
+    width: 80px;
   }
 }
 .home_main .content_container .intro-container .heading div:nth-child(1) img, .home_main .content_container .intro-container .heading div:nth-child(3) img {
@@ -428,6 +468,17 @@ header nav .pages a .page-text {
   }
   .home_main .content_container .intro-container .heading div:nth-child(2) h2 {
     font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .home_main .content_container .intro-container .heading div:nth-child(2) {
+    padding: 0 0.5rem;
+  }
+  .home_main .content_container .intro-container .heading div:nth-child(2) h1 {
+    font-size: 26px;
+  }
+  .home_main .content_container .intro-container .heading div:nth-child(2) h2 {
+    font-size: 14px;
   }
 }
 .home_main .content_container .intro-container .intro-summary {
@@ -516,6 +567,12 @@ header nav .pages a .page-text {
   .home_main .content_container .intro-container .intro-summary .slide-card .slide-desc {
     width: 70%;
     font-size: 1rem;
+  }
+}
+@media (max-width: 430px) {
+  .home_main .content_container .intro-container .intro-summary .slide-card .slide-desc {
+    width: 70%;
+    font-size: 0.8rem;
   }
 }
 .home_main .content_container .intro-container .intro-summary .s-c-1 {
@@ -1108,9 +1165,10 @@ header nav .pages a .page-text {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 0 0;
   }
   .home_main > div {
+    width: 100%;
     height: auto;
   }
 }
