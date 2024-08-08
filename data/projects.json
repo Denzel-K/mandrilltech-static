@@ -1,0 +1,98 @@
+[{
+  "id": "1",
+  "title": "Responsive Intro Section",
+  "publishDate": {
+    "$date": "2022-08-20T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T10:43:35.859Z"
+  },
+  "repo": "https://github.com/Denzel-K/intro-section",
+  "liveSite": "https://denzel-k.github.io/intro-section/",
+  "thumbnail": "intro-section.png",
+  "category": "Frontend Mentor"
+},
+{
+  "id": "2",
+  "title": "Time Tracking Dashboard",
+  "publishDate": {
+    "$date": "2022-08-30T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T10:46:27.608Z"
+  },
+  "repo": "https://github.com/Denzel-K/time-tracker/tree/update",
+  "liveSite": "https://denzel-k.github.io/time-tracker/",
+  "thumbnail": "time-tracker.png",
+  "category": "Frontend Mentor"
+},
+{
+  "id": "3",
+  "title": "Social Media Tracker (With Theme Switch)",
+  "publishDate": {
+    "$date": "2022-07-12T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T10:48:51.749Z"
+  },
+  "repo": "https://github.com/Denzel-K/theme-switcher-dashboard",
+  "liveSite": "https://denzel-k.github.io/theme-switcher-dashboard/",
+  "thumbnail": "theme-switcher.png",
+  "category": "Frontend Mentor"
+},
+{
+  "id": "4",
+  "title": "Spendings Chart Component (chart.js)",
+  "publishDate": {
+    "$date": "2024-01-13T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T10:51:34.624Z"
+  },
+  "repo": "https://github.com/Denzel-K/Chart-Component",
+  "liveSite": "https://denzel-k.github.io/Chart-Component/",
+  "thumbnail": "chart-component.png",
+  "category": "Frontend Mentor"
+},
+{
+  "id": "5",
+  "title": "MultiStep Form",
+  "publishDate": {
+    "$date": "2024-01-30T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T10:53:30.364Z"
+  },
+  "repo": "https://github.com/Denzel-K/multistepForm",
+  "liveSite": "https://denzel-k.github.io/multistepForm/",
+  "thumbnail": "multistepForm.png",
+  "category": "Frontend Mentor"
+},
+{
+  "id": "6",
+  "title": "Testimonials Slider",
+  "publishDate": {
+    "$date": "2022-10-14T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T10:58:02.663Z"
+  },
+  "repo": "https://github.com/Denzel-K/testimonials",
+  "liveSite": "https://denzel-k.github.io/testimonials/",
+  "thumbnail": "testimonials-slider.png",
+  "category": "Frontend Mentor"
+},
+{
+  "id": "7",
+  "title": "Healthcare Management System",
+  "publishDate": {
+    "$date": "2024-07-19T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-04T11:05:47.837Z"
+  },
+  "repo": "https://github.com/Denzel-K/afya_plus",
+  "liveSite": "https://afya-plus.vercel.app/",
+  "thumbnail": "afya-plus.png",
+  "category": "web"
+}]

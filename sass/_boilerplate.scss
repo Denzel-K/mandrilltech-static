@@ -1,0 +1,47 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// body, main, header {
+//   @media(min-width: 1400px){
+//     max-width: 1800px;
+//     margin: auto;
+//   }
+// }
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: $bg;
+  min-height: 100vh;
+  padding: 0;
+  
+  &::-webkit-scrollbar{
+    width: .35rem;
+  }
+
+  &::-webkit-scrollbar-thumb{
+    background: $scroll-thumb-main;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 8px 12px;
+  text-align: center;
+  border: none;
+  transition: 0.3s;
+  border-radius: 12px;
+  font-weight: 600;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
