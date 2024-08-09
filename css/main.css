@@ -1201,6 +1201,7 @@ header.scrolled {
 }
 @media (max-width: 600px) {
   .socials-box a {
+    margin: 0 0.8rem;
     width: 32px;
   }
 }
