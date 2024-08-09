@@ -63,6 +63,7 @@ header {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    padding: 0.4rem 0.6rem;
   }
 }
 header .logo .mandrill-logo {
@@ -86,7 +87,7 @@ header .logo .menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
+    width: 32px;
   }
   header .logo .menu img {
     width: 100%;
@@ -108,8 +109,9 @@ header .logo .menu {
     width: 100%;
   }
   header .logo .mandrill-logo img {
-    width: 36px;
-    height: 360px;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
   }
 }
 header nav {
@@ -262,7 +264,7 @@ header.scrolled {
 }
 @media (max-width: 430px) {
   .home_main .static_card article .content {
-    padding: 1rem 0.4rem;
+    padding: 1rem 0.6rem;
   }
 }
 .home_main .static_card article .content p:nth-child(1) {
