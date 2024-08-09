@@ -1010,7 +1010,6 @@ header.scrolled {
   font-size: 14px;
   font-family: "Mukta";
   font-weight: 600;
-  opacity: 0.8;
 }
 @media (max-width: 430px) {
   .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc .p_head span {
@@ -1030,8 +1029,13 @@ header.scrolled {
   width: 100%;
 }
 .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc .p_head .p-links a:first-child {
-  margin-right: 1.6rem;
+  margin-right: 1rem;
   padding: 2px;
+}
+@media (max-width: 600px) {
+  .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc .p_head .p-links a:first-child {
+    margin-right: 0.8rem;
+  }
 }
 .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc h3 {
   font-size: 22px;
