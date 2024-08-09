@@ -12,10 +12,15 @@ function getDaySuffix(day) {
 // Function to format the date
 function formatDateWithSuffix(dateStr) {
   const date = new Date(dateStr);
-  const options = { month: 'long', year: 'numeric' };
+  
+  // Extract month, day, and year separately
+  const options = { month: 'long' };
+  const month = new Intl.DateTimeFormat('en-US', options).format(date);
   const day = date.getDate();
-  const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date);
-  return `${formattedDate} ${day}${getDaySuffix(day)}, ${date.getFullYear()}`;
+  const year = date.getFullYear();
+  
+  // Construct the final formatted date
+  return `${month} ${day}${getDaySuffix(day)}, ${year}`;
 }
 
 const fetchData = async () => {
