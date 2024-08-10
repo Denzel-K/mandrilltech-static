@@ -221,9 +221,11 @@ header.scrolled {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: scale(0.8);
   }
   to {
     opacity: 0.65;
+    transform: scale(1);
   }
 }
 @keyframes fadeInLeft {
@@ -244,6 +246,26 @@ header.scrolled {
   to {
     opacity: 0.5;
     transform: translateX(0);
+  }
+}
+@keyframes appear_on_scroll {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes arsenal_items {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 .home_main {
@@ -634,7 +656,7 @@ header.scrolled {
   animation: fadeInLeft 3s ease-in-out forwards;
 }
 .home_main .content_container .slide_container .slide_box .slide_item.active .s_pic {
-  animation: fadeIn 3s ease-in-out forwards;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 .home_main .content_container .slide_container .slide_box .hidden_slide {
   display: none;
@@ -688,6 +710,11 @@ header.scrolled {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   padding: 1.6rem 1.4rem;
+}
+.home_main .content_container .skill-container .expertise > * {
+  animation: appear_on_scroll linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 @media (max-width: 1024px) {
   .home_main .content_container .skill-container .expertise {
@@ -784,6 +811,11 @@ header.scrolled {
   .home_main .content_container .skill-container .arsenal .arsenal-grid {
     gap: 1rem;
   }
+}
+.home_main .content_container .skill-container .arsenal .arsenal-grid .tool {
+  animation: arsenal_items 3s ease;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
 }
 .home_main .content_container .skill-container .arsenal .arsenal-grid .tool .tool-icon {
   width: 32px;
@@ -1091,6 +1123,13 @@ header.scrolled {
     font-size: 12px;
   }
 }
+@media (max-width: 600px) {
+  .home_main .content_container .projects-container .project-box .projects .p-grid .p-item {
+    animation: appear_on_scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+}
 .home_main .content_container .projects-container .project-box .projects .coming-up {
   width: 100%;
   height: 100%;
@@ -1157,6 +1196,9 @@ header.scrolled {
   justify-content: center;
   flex-direction: column;
   padding-bottom: 2rem;
+}
+.home_main .content_container .contact-container > * {
+  animation: none;
 }
 .home_main .content_container .contact-container #t4 {
   font-size: 1.65rem;
@@ -1287,9 +1329,11 @@ header.scrolled {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: scale(0.8);
   }
   to {
     opacity: 0.65;
+    transform: scale(1);
   }
 }
 @keyframes fadeInLeft {
@@ -1310,6 +1354,26 @@ header.scrolled {
   to {
     opacity: 0.5;
     transform: translateX(0);
+  }
+}
+@keyframes appear_on_scroll {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes arsenal_items {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=main.css.map */

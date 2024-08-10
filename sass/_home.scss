@@ -418,7 +418,7 @@
             }
           }
           .s_pic{
-            animation: fadeIn 3s ease-in-out forwards;
+            animation: fadeIn 2s ease-in-out forwards;
           }
         }
     
@@ -479,6 +479,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
         padding: 1.6rem 1.4rem;
+
+        & > * {
+          animation: appear_on_scroll linear;
+          animation-timeline: view();
+          animation-range: entry 0% cover 40%;
+        }
 
         @media(max-width: 1024px){
           grid-template-columns: 1fr 1fr;
@@ -577,6 +583,10 @@
           }
   
           .tool{
+            animation: arsenal_items 3s ease;
+            animation-timeline: view();
+            animation-range: entry 0% cover 50%;
+
             .tool-icon{
               width: 32px;
               display: flex;
@@ -909,6 +919,12 @@
                   }
                 }
               }
+
+              @media(max-width: 600px){
+                animation: appear_on_scroll linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 35%;
+              }
             }
           }
 
@@ -987,6 +1003,10 @@
       justify-content: center;
       flex-direction: column;
       padding-bottom: 2rem;
+
+      & > * {
+        animation: none;
+      }
 
       #t4{
         font-size: 1.65rem;

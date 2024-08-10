@@ -108,6 +108,21 @@ fetchData()
 window.addEventListener('load', () => {
   //fetch projects
   fetchData();
+
+  //observe screen
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('show')
+      }
+      else{
+        entry.target.calassList.remove('show');
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll(".hiddenElement");
+  hiddenElements.forEach(el => observer.observe(el));
 })
 
 //Header behaviour on scroll
