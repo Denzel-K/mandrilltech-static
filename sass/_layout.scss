@@ -126,7 +126,6 @@ header {
           display: flex;
           align-items: center;
           justify-content: center;
-          //border: 1px solid black;
           
           img {
             width: 100%;
@@ -134,17 +133,12 @@ header {
         }          
 
         .page-text{
-          //border: 1px solid black;
           font-size: 14px;
           font-weight: 700;
           color: $text-pink;
           text-align: start;
           margin-top: 2px;
         }
-
-        // @media(max-width: 600px){
-          
-        // }
       }
     }
   }

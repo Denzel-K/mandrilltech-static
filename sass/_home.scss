@@ -183,7 +183,7 @@
       color: $text-light-fade;
       font-size: 36px;
       padding-top: 2rem;
-      opacity: .8;
+      opacity: .7;
       font-family: 'Raleway';
 
       @media(max-width: 780px){
@@ -191,286 +191,238 @@
       }
     }
 
-    .intro-container {   
+    .slide_container{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      height: 100vh;
 
-      .heading {
-        padding: 2rem .8rem;
+      .heading{
+        h1, h2 {
+          text-align: center;
+        }
+  
+        h1 {
+          color: $text-heading;
+          font-family: 'Ubuntu Sans';
+          font-size: 52px;
+        }
+        h2 {
+          color: $text-heading;
+          font-family: 'Ubuntu Mono';
+          font-size: 18px;
+          opacity: .7;
+          margin-top: 6px;
+        }
+
+        @media(max-width: 1024px){
+          h1{
+            font-size: 48px;
+          }
+          h2{
+            font-size: 18px;
+          }
+        }
+
+        @media(max-width: 780px){
+          h1{
+            font-size: 50px;
+          }
+          h2{
+            font-size: 18px;
+          }
+        }
+
+        @media(max-width: 430px){
+          margin-top: 2rem;
+          padding: 0 .6rem;
+
+          h1{
+            font-size: 28px;
+          }
+          h2{
+            font-size: 16px;
+          }
+        }
+      }
+
+      .slide_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5rem;
+    
+        .slide_item {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+    
+          & > div {
+            width: 50%;
+          }
+    
+          .s_desc{
+            padding: 0 1rem;
+    
+            h1{
+              font-size: 2rem;
+              font-weight: 700;
+              font-family: 'Raleway';
+              text-align: left;
+              color: $text-light-pink;
+    
+              @media(max-width: 1040px){
+                font-size: 1.65rem;
+                text-align: center;
+              }
+              @media(max-width: 600px){
+                font-size: 1.25rem;
+              }
+            }
+            p{
+              font-size: 1.2rem;
+              font-family: 'Mukta';
+              text-align: left;
+              color: $text-light-fade;
+              margin-top: 1.5rem;
+    
+              @media(max-width: 1040px){
+                font-size: 1.15rem;
+                text-align: center;
+                margin-top: .8rem;
+              }
+              @media(max-width: 600px){
+                font-size: 1rem;
+              }
+            }
+    
+            @media(max-width: 780px){
+              padding: 0 1rem;
+            }
+            // @media(max-width: 600px){
+            //   .truncate {
+            //     display: -webkit-box;
+            //     -webkit-line-clamp: 3; 
+            //     -webkit-box-orient: vertical;
+            //     overflow: hidden;
+            //     text-overflow: ellipsis;
+            //     position: relative;
+    
+            //     .more {
+            //       display: inline;
+            //     }
+            //   }
+            // }
+          }
+    
+          .s_pic{
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            img{
+              width: 100%;
+
+              @media(max-width: 1040px){
+                max-height: 250px;
+                width: auto;
+                height: 100%;
+              }
+              @media(max-width: 600px){
+                max-height: 200px;
+                width: auto;
+                height: 100%;
+              }
+            }
+    
+            @media(max-width: 780px){
+              padding: 0 1rem;
+            }
+          }
+    
+          @media(max-width: 1040px){
+            flex-direction: column-reverse;
+    
+            & > div {
+              width: 100%;
+            }
+          }
+        }
+
+        #s_item_3{
+          .s_pic{
+            padding: 2rem 1.5rem;
+          }
+        }
+    
+        .slide_item.active{
+          opacity: 1;
+    
+          .s_desc {
+            h1{
+              animation: fadeInLeft 1s ease-in-out forwards;
+            }
+            p{
+              animation: fadeInLeft_P 2s ease-in-out forwards;
+            }
+            .more-btn{
+              animation: fadeInLeft 3s ease-in-out forwards;
+            }
+          }
+          .s_pic{
+            animation: fadeIn 3s ease-in-out forwards;
+          }
+        }
+    
+        .hidden_slide{
+          display: none;
+        }
+
+        @media(max-width: 780px){
+          margin-top: 4rem;
+        }
+      }
+    
+      .slide_nav{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        
-        .open-tag{
-          margin-right: -3rem;
-
-          @media(max-width: 430px){
-            margin-right: -2.8;
-          }
-        }
-        .close-tag{
-          margin-left: -2.6rem;
-
-          @media(max-width: 430px){
-            margin-left: -2rem;
-          }
-        }
-  
-        div:nth-child(1), div:nth-child(3){
-          width: 130px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          @media(max-width: 1024px){
-            width: 120px;
-          }
-
-          @media(max-width: 430px){
-            width: 80px;
-          }
-  
-          img {
-            width: 100%;
-            opacity: .6;
-          }
-        }
-  
-        div:nth-child(2){
-          h1, h2 {
-            text-align: center;
+        width: 100%;
+        margin-top: 4rem;
+    
+        span{
+          width: 36px;
+          height: 36px;
+          padding: 4px;
+          border-radius: 50%;
+          background-color: $primary;
+          transition: 0.3s ease;
+          margin: 0 1rem;
+    
+          &:hover{
+            background-color: rgb(252, 101, 151);
+            transform: scale(1.05);
+            cursor: pointer;
           }
     
-          h1 {
-            color: $text-heading;
-            font-family: 'Ubuntu Sans';
-            font-size: 50px;
+          img{
+            width: 100%;
           }
-          h2 {
-            color: $text-heading;
-            font-family: 'Ubuntu Mono';
-            font-size: 20px;
-            opacity: .7;
-            margin-top: 6px;
-  
-            span{
-              color: $icon-blue;
-            }
-          }
+        }
 
-          @media(max-width: 1024px){
-            h1{
-              font-size: 36px;
-            }
-            h2{
-              font-size: 20px;
-            }
-          }
-
-          @media(max-width: 780px){
-            h1{
-              font-size: 32px;
-            }
-            h2{
-              font-size: 18px;
-            }
-          }
-
-          @media(max-width: 430px){
-            padding: 0 0.5rem;
-            h1{
-              font-size: 26px;
-            }
-            h2{
-              font-size: 14px;
-            }
-          }
+        @media(max-width: 1040px){
+          margin-top: 2rem;
         }
       }
-
-      .intro-summary {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.6rem;
-        padding: 2.4rem 1.4rem 1rem 1.4rem;
-  
-        .slide-card{
-          border-radius: 12px;
-          height: 100%;
-          background-color: $card-bg;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-          padding: 1rem;
-          transition: .3s ease;
-
-          &:hover{
-            transform: scale(1.1);
-            box-shadow: 0 0 8px 4px var(--sh-clr);
-
-            .slide-icon{
-              img{
-                opacity: 1;
-              }        
-            }
-          }
-  
-          h4 {
-            text-align: start;
-            font-size: 24px;
-            color: $text-light-fade;
-            opacity: .5;
-            font-family: 'Mukta'; 
-            text-align: center;
-            
-            @media(max-width: 1024px){
-              font-size: 18px;
-            }
-
-            @media(max-width: 780px){
-              font-size: 22px;
-            }
-          }
-  
-          .slide-icon{
-            width: 100%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.4rem 1rem;
-  
-            img {
-              width: 120px;
-              height: 120px;
-              opacity: .6;
-
-              @media(max-width: 1024px){
-                width: 70px;
-                height: 70px;
-              }
-              @media(max-width: 780px){
-                width: 100px;
-                height: 100px;
-              }
-            }
-          }
-  
-          .slide-desc {
-            width: 100%;
-            text-align: center;
-            padding: .8rem 0;
-            font-size: 16px;
-            color: $text-light-fade;
-            opacity: .7;
-
-            @media(max-width: 780px){
-              text-align: start;
-              width: 60%;
-              font-size: 1.2rem;
-            }
-
-            @media(max-width: 600px){
-              width: 70%;
-              font-size: 1rem;
-            }
-
-            @media(max-width: 430px){
-              width: 70%;
-              font-size: 0.8rem;
-            }
-          }
-        }
-
-        .s-c-1 {
-          animation-name: scale-change;
-          animation-duration: 2s;
-          animation-timing-function: ease;
-          animation-delay: 2s;
-
-          @media(max-width: 780px){
-            animation: none;            
-          }
-        }
-        .s-c-2 {
-          animation-name: scale-change;
-          animation-duration: 2s;
-          animation-timing-function: ease;
-          animation-delay: 4s;
-
-          @media(max-width: 780px){
-            animation: none;
-            //transform: scale(0);
-          }
-        }
-        .s-c-3 {
-          animation-name: scale-change;
-          animation-duration: 2s;
-          animation-timing-function: ease;
-          animation-delay: 6s;
-
-          @media(max-width: 780px){
-            animation: none;
-            //transform: scale(0);
-          }
-        }
-
-        .hidden-card{
-          @media(max-width: 780px){
-            display: none;
-          }
-        }
-
-        @media(max-width: 1025px){
-          gap: 0.8rem;
-          padding: 2.4rem 1rem 1rem 1.4rem;
-        }
-
-        @media(max-width: 780px){
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-          padding: 0 1.25rem;
-
-          .slide-card{
-            width: 100%;
-
-            .boxes{
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 100%;
-              gap: 1rem;
-              padding: 0;
-
-              .slide-icon{
-                width: 40%;
-              }
-            }
-
-            &:hover{
-              transform: scale(1);
-              box-shadow: 0 0 8px 4px var(--sh-clr);
-  
-              .slide-icon{
-                img{
-                  opacity: 1;
-                }        
-              }
-            }
-          }
-
-          .slide-card:nth-child(even) .slide-icon{
-            order: 2;
-          }
-        }
-      }
-    }   
+    }
 
     .skill-container{
       display: flex;
