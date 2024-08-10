@@ -337,7 +337,7 @@ header.scrolled {
   }
 }
 .home_main .static_card article .content p:nth-child(4) {
-  color: #efc4c4;
+  color: #fe97ad;
   font-size: 16px;
   font-weight: 500;
   font-family: "Raleway";
@@ -839,7 +839,7 @@ header.scrolled {
   justify-content: flex-start;
   border-radius: 12px;
   border: 1.6px solid hsla(234, 37%, 90%, 0.1);
-  background-color: #08031d;
+  background-color: black;
   transition: width 0.8s ease-in-out;
   z-index: 30;
 }
@@ -952,6 +952,7 @@ header.scrolled {
   border-radius: 12px;
   padding: 0.8rem;
   overflow-y: auto;
+  background-color: black;
 }
 .home_main .content_container .projects-container .project-box .projects::-webkit-scrollbar {
   width: 0.3rem;
@@ -1007,9 +1008,11 @@ header.scrolled {
 .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-image img {
   width: 100%;
   transition: transform 0.5s ease;
+  opacity: 0.6;
 }
 .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-image img:hover {
   transform: scale(1.2);
+  opacity: 0.8;
 }
 .home_main .content_container .projects-container .project-box .projects .p-grid .p-item .p-desc {
   padding: 1rem 0;
@@ -1154,6 +1157,9 @@ header.scrolled {
   justify-content: center;
   flex-direction: column;
   padding-bottom: 2rem;
+}
+.home_main .content_container .contact-container #t4 {
+  opacity: 0;
 }
 .home_main .content_container .contact-container .contact_info {
   text-align: center;

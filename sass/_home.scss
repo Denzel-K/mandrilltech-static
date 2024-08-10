@@ -100,7 +100,7 @@
           }
         }
         p:nth-child(4){
-          color: $text-light-fade;
+          color: $text-light-pink;
           font-size: 16px;
           font-weight: 500;
           font-family: 'Raleway';
@@ -634,7 +634,8 @@
           justify-content: flex-start;
           border-radius: 12px;
           border: 1.6px solid $border;
-          background-color: $sidebar-bg;
+          // background-color: $sidebar-bg;
+          background-color: black;
           transition: width 0.8s ease-in-out;
           z-index: 30;
 
@@ -764,6 +765,7 @@
           border-radius: 12px;
           padding: .8rem;
           overflow-y: auto; 
+          background-color: black;
 
           &::-webkit-scrollbar{
             width: .3rem;
@@ -819,9 +821,11 @@
                   width: 100%;
                   // height: 100%;
                   transition: transform 0.5s ease;
+                  opacity: .6;
 
                   &:hover{
                     transform: scale(1.2);
+                    opacity: .8;
                   }
                 }
               }
@@ -983,6 +987,10 @@
       justify-content: center;
       flex-direction: column;
       padding-bottom: 2rem;
+
+      #t4{
+        opacity: 0;
+      }
 
       .contact_info{
         text-align: center;
