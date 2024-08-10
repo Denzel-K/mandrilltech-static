@@ -989,7 +989,11 @@
       padding-bottom: 2rem;
 
       #t4{
-        opacity: 0;
+        font-size: 1.65rem;
+
+        @media(max-width: 600px){
+          font-size: 1.25rem;
+        }
       }
 
       .contact_info{
