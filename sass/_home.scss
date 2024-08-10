@@ -89,6 +89,7 @@
           font-weight: 600;
           font-family: 'Raleway';
           margin-top: 8px;
+          opacity: .8;
 
           @media(max-width: 1040px){
             font-size: 24px;
@@ -99,7 +100,7 @@
           }
         }
         p:nth-child(4){
-          color: $text-light-pink;
+          color: $text-light-fade;
           font-size: 16px;
           font-weight: 500;
           font-family: 'Raleway';
@@ -126,7 +127,7 @@
           }
         }
 
-        @media(min-width: 1445px){
+        @media(min-width: 2000px){
           width: 90%;
 
           p:nth-child(1){
@@ -344,17 +345,15 @@
             justify-content: center;
     
             img{
-              width: 100%;
+              max-height: 300px;
+              width: auto;
 
               @media(max-width: 1040px){
                 max-height: 250px;
                 width: auto;
-                height: 100%;
               }
               @media(max-width: 600px){
                 max-height: 200px;
-                width: auto;
-                height: 100%;
               }
             }
     
@@ -372,9 +371,35 @@
           }
         }
 
+        #s_item_2{
+          .s_pic{
+            @media(max-width: 380px){
+              padding: 0 0 24px 0;
+            }
+          }
+        }
+
         #s_item_3{
           .s_pic{
-            padding: 2rem 1.5rem;
+            @media(max-width: 1040px){
+              padding: 0 0 1.25rem 0;
+            }
+
+            img{
+              @media(max-width: 1040px){
+                max-height: 230px;
+                width: auto;
+              }
+              @media(max-width: 600px){
+                max-height: 180px;
+              }
+              @media(max-width: 380px){
+                max-height: 204px;
+              }
+              @media(max-width: 330px){
+                max-height: 180px;
+              }
+            }
           }
         }
     
@@ -422,11 +447,13 @@
           background-color: $primary;
           transition: 0.3s ease;
           margin: 0 1rem;
+          opacity: .7;
     
           &:hover{
             background-color: rgb(252, 101, 151);
             transform: scale(1.05);
             cursor: pointer;
+            opacity: 1;
           }
     
           img{
@@ -959,7 +986,7 @@
 
       .contact_info{
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 600;
         color: $text-pink;
         opacity: .8;
