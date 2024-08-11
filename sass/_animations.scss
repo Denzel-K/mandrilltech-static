@@ -1,29 +1,11 @@
 @import 'variables';
 
-@keyframes switch-content {
-  0% {
-    color: $icon-blue;
+@keyframes rotate_cog {
+  from {
+    transform: rotateZ(0deg);
   }
-  35% {
-    color: $primary;
-  }
-  0% {
-    color: $icon-gold;
-  }
-}
-
-@keyframes scale-change {
-  0% {
-    transform: scale(1);
-    box-shadow: 0;
-  }
-  35% {
-    transform: scale(1.1);
-    box-shadow: 0 0 8px 4px var(--sh-clr);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0;
+  to {
+    transform: rotateZ(360deg);
   }
 }
 
