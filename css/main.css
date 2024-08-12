@@ -108,7 +108,7 @@ header .logo .menu {
   header .logo .mandrill-logo img {
     width: 34px;
     height: 34px;
-    margin-right: 1.25rem;
+    margin-right: 2.15rem;
   }
 }
 header nav {
@@ -1222,21 +1222,20 @@ header.scrolled {
 @media (max-width: 1040px) {
   .home_main .content_container .projects-container .project-box {
     padding: 0 0 1rem 0;
-    height: 75vh;
     gap: 0.8rem;
   }
 }
 @media (max-width: 780px) {
   .home_main .content_container .projects-container .project-box {
     padding: 0 0 1rem 0;
-    height: 70vh;
+    height: 75vh;
   }
 }
 @media (max-width: 480px) {
   .home_main .content_container .projects-container .project-box {
     grid-template-columns: 2.5rem 1fr;
     gap: 0.8rem;
-    height: 65vh;
+    height: 75vh;
   }
 }
 .home_main .content_container .contact-container {

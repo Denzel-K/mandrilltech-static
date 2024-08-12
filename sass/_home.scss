@@ -1066,19 +1066,18 @@
 
         @media(max-width: 1040px){
           padding: 0 0 1rem 0;
-          height: 75vh;
           gap: .8rem
         }
 
         @media(max-width: 780px){
           padding: 0 0 1rem 0;
-          height: 70vh;
+          height: 75vh;
         }
 
         @media(max-width: 480px){
           grid-template-columns: 2.5rem 1fr;
           gap: .8rem;
-          height: 65vh;
+          height: 75vh;
         }
       }   
     }
