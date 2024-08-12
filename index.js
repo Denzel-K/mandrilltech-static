@@ -182,7 +182,7 @@ function pending(){
 }
 
 fm_li.onclick = () => {
-  project_title.textContent = "Frontend Mentor Projects";
+  project_title.textContent = "Frontend Mentor";
   fm_li.style = "background-color: rgb(30, 23, 79)";
   web_li.style = "background: transparent";
   mobile_li.style = "background: transparent";
