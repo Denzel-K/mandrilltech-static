@@ -30,7 +30,7 @@ forwardButton.addEventListener('click', nextSlide);
 backButton.addEventListener('click', prevSlide);
 
 // Automatic sliding
-setInterval(nextSlide, 5000); // Slide every 5 seconds
+setInterval(nextSlide, 6000); // Slide every 5 seconds
 
 // Initially show the first slide
 showSlide(currentIndex);

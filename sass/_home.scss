@@ -455,6 +455,32 @@
             }
           }
         }
+
+        #s_item_4{
+          h1 {
+            display: flex; 
+            align-items: center;
+
+            @media(max-width: 1040px){
+              justify-content: center;
+            }
+
+            span{
+              display: flex; 
+              align-items: center;
+              justify-content: center;
+              padding: 4px .35rem 0 .65rem;
+
+              @media(max-width: 600px){
+                padding: 0 .35rem 0 .65rem;
+              }
+
+              img{
+                width: 32px;
+              }
+            }
+          }
+        }
     
         .slide_item.active{
           opacity: 1;
@@ -480,7 +506,7 @@
         }
 
         @media(max-width:1040px){
-          margin-top: 1.5rem;
+          margin-top: 2.5rem;
         }
 
         @media(max-width: 780px){
