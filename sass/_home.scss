@@ -934,11 +934,11 @@
                   width: 100%;
                   // height: 100%;
                   transition: transform 0.5s ease;
-                  opacity: .6;
+                  opacity: .7;
 
                   &:hover{
                     transform: scale(1.2);
-                    opacity: .8;
+                    opacity: .85;
                   }
                 }
               }
@@ -1087,7 +1087,7 @@
           }
         }     
         @media(max-width: 1450px){
-          height: 70vh;
+          height: 80vh;
         }
 
         @media(max-width: 1040px){
@@ -1097,13 +1097,11 @@
 
         @media(max-width: 780px){
           padding: 0 0 1rem 0;
-          height: 75vh;
         }
 
         @media(max-width: 480px){
           grid-template-columns: 2.5rem 1fr;
           gap: .8rem;
-          height: 75vh;
         }
       }   
     }
