@@ -95,4 +95,19 @@
   "liveSite": "https://afya-plus.vercel.app/",
   "thumbnail": "afya-plus.png",
   "category": "web"
-}]
+},
+{
+  "id": "8",
+  "title": "SmoothieLand - Blend your day with freshness",
+  "publishDate": {
+    "$date": "2024-08-24T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-08-24T00:00:00.000Z"
+  },
+  "repo": "https://github.com/Denzel-K/smoothie_land",
+  "liveSite": "https://expo.dev/artifacts/eas/ehAX2oXvPC7YcuVXuhc1fM.apk",
+  "thumbnail": "smoothieLand.png",
+  "category": "mobile"
+}
+]
