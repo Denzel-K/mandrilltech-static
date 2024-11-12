@@ -32,7 +32,7 @@ const fetchData = async () => {
 
 fetchData()
   .then(results => {
-    console.log("Promise resolved:", results)
+    //console.log("Promise resolved:", results)
 
     // Sort the results array by date in descending order
     results.sort((a, b) => new Date(b.publishDate.$date) - new Date(a.publishDate.$date));
